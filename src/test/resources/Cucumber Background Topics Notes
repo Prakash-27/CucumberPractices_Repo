@@ -1,0 +1,10 @@
+Cucumber Background:
+
+ Occasionally you'll find yourself repeating the same GIVEN Steps in all of the Scenarios in a Feature 
+ 
+ Since it is repeated in every Scenario, this is an indication that those steps are not essential to describe the scenario; they are incidental details.
+ You can literally move such GIVEN Steps to the background, by grouping them under a BACKGROUND Section.
+ 
+ A BACKGROUND allows you to add some context to the scenario that follow it. It can contain one or more GIVEN steps, Which are run before each Scenario, but after any BEFORE HOOKS.
+ 
+ A BACKGROUND is placed before the first SCENARIO/EXAMPLE at the same level of indentation. 

@@ -1,0 +1,100 @@
+Learn:
+Hooks in Cucumber
+What is Before and After in Cucumber
+What is BeforeStep and AfterStep
+Scenario Object in Hooks
+Hooks with Tags
+Difference between hooks and background
+
+----------------------------------------------------------------------------------------------------
+
+Hooks are Setup & tearDown methods just like in TestNG/JUnit  
+
+BACKGROUND -- SHOULD BE PART OF FEATURE FILE
+
+CUCUMBER HOOKS: -- Technical Stakeholders 
+===============
+NOT PART OF FEATURE FILE
+CAN BE WRITTEN IN STEP DEFINITION CLASS 
+OR CAN BE WRITTEN IN A SEPERATE CONFIGURATION CLASS
+
+1.Hooks are annotated with:
+---------------------------
+
+@Before -- will be executed before each scenario
+@After -- will be executed after each scenario
+
+@Before
+setUp(){
+Preconditions or Prerequesties like Initialize my Driver, Launch my Browser, Launch the URL, Delete the Cookies
+} 
+
+@After
+TearDown(){
+Close or Quit the Browser, Close the Database Connections
+}
+
+2.Another Cucumber Hooks:
+-------------------------
+
+@BeforeStep -- before each step in a feature file
+@AfterStep -- After each step in a feature file
+
+
+3.Multiple Before and After methods:
+------------------------------------
+
+@Before
+m1(){
+order = 1 (Launch my Browser)
+}
+
+@Before
+m2(){
+order = 2 (Database Connections)
+}
+
+@After
+m1(){
+order = 1 (close my Browser)
+}
+
+@After
+m2(){
+order = 2 (Disable Database Connections)
+}
+
+------------------------------------------------------------------------------------------------------
+
+Annotate tags with hooks:
+-------------------------
+
+tags Hooks
+@Before("@Smoke") -> This will only execute @Smoke Test Methods only
+
+@Smoke
+scenario search
+
+@Smoke
+scenario adv search
+
+@Regression
+scenario homepage feature
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

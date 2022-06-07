@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.803">
+    <testcase classname="Uber Booking Feature" name="Booking Cab for Sedan" time="0.16">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User wants to select a car type "sedan" from uber app.................passed
+When User selects car "sedan" and pick up point "Bangalore" and drop location "Pune".passed
+Then Driver starts the journey..............................................passed
+And Driver ends the journey.................................................passed
+Then User pays 1000 USD.....................................................passed
+Then User checks the trip details...........................................undefined
+]]></failure>
+    </testcase>
+    <testcase classname="Uber Booking Feature" name="Booking Cab for SUV" time="0.011">
+        <system-out><![CDATA[Given User wants to select a car type "SUV" from uber app...................passed
+When User selects car "SUV" and pick up point "Bangalore" and drop location "Hyderabad".passed
+Then Driver starts the journey..............................................passed
+And Driver ends the journey.................................................passed
+Then User pays 1000 USD.....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Uber Booking Feature" name="Booking Cab for Mini Cooper" time="0.014">
+        <system-out><![CDATA[Given User wants to select a car type "Mini Cooper" from uber app...........passed
+When User selects car "Mini Cooper" and pick up point "Pune" and drop location "Mumbai".passed
+Then Driver starts the journey..............................................passed
+And Driver ends the journey.................................................passed
+Then User pays 1000 USD.....................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

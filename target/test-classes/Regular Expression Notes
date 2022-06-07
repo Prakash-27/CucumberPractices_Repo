@@ -1,0 +1,40 @@
+Two types of Regular Expression in Cucumber:
+
+1.Regular Expression --> [0-9]+, (\\d+)
+2.Cucumber Expression in (2017)
+
+Rules:
+1.Step definition file will be generating cucumber expression by default
+2.But you can use regular expression also in step definition file
+3.You can mix both regular expression and cucumber expression in the step definition file
+4.But you can not mix both expression in a Single step definition method
+
+{string} {int} {float} -- cucumber expression -> For more cucumber expression checkout the official Documentation page.
+
+Regular Expression:
+
+() -> capture group
+[] -> Range
+
+([0-9]) -> capture group --> 0 to 9 digits appear
+
+Quantifiers in Reg Exp: + * ? {n}
+Definition --> How many times a character needs to be occurred
+
+([0-9]+) -> 0 to 9 digits appear (once or more)
+([0-9]{4}) --> 0000, 9999, 1212, 3456, 1234, 8888
+([0-9]*) -> zero or more
+([0-9]?) -> zero or once
+
+Short hand Characters:
+https://www.oreilly.com/library/view/java-9-regular/9781787288706/251e3389-2f47-4c59-8ac6-f58a2f24556f.xhtml
+ 
+\d -- numeric digits
+(\d+)
+
+([a-zA-Z0-9]+)
+
+
+
+
+
