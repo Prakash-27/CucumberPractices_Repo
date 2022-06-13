@@ -1,0 +1,19 @@
+Given: --> i)Preconditions are mentioned in the Given keyword.
+
+ii)The Steps of the Given keyword put the system into a known state, which is necessary for the user action.
+Avoid talking about user interaction in Given Steps.
+
+When: --> i)The purpose of the When Steps is to describe the user action.
+
+Then: --> i)The purpose of Then Steps is to observe the expected output.
+
+ii)The observations should be related to the business value/benefit of your feature description.
+
+Extended Keyword:
+-----------------
+
+And: This is used for statements that are an addition to the previous Steps and represent positives statements.
+
+But: This is used for statements that are an addition to the previous Steps and represent negatives statements.
+
+In a Step Definition file, And and But are listed as Given/When/Then, the keyword that they appear after There are no And and But keyword in step Definitions.
