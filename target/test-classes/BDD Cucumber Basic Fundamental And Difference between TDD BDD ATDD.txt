@@ -1,0 +1,116 @@
+What is the different between traditional software development process and BDD?
+===============================================================================
+-->In software engineering, behavior-driven development (BDD) is an Agile software development process that encourages collaboration among developers, QA and non-technical or business participants in a software project. It encourages teams to use conversation and concrete examples to formalize a shared understanding of how the application should behave. It emerged from test-driven development (TDD).
+
+-->Behavior-driven development combines the general techniques and principles of TDD with ideas from domain-driven design and object-oriented analysis and design to provide software development and management teams with shared tools and a shared process to collaborate on software development.
+
+Traditional Development Process:
+================================
+i) Stakeholders tells Product owners/BA about Bussiness needs.
+
+ii) Po/BA write the requirements.
+
+iii) Dev Team starts writing the code. 
+
+iv) Tester starts writing test cases.
+
+v) Finish Product.
+
+vi) Tech Writers will write a technical Document(DOC).
+
+
+What is BDD -> Behaviour Driven Development: 
+============================================
+i) Stakeholders + PO/BA -> Talk about Bussiness Requirement more collaborately.
+
+ii) PO + Dev + QA -> collaborate more around Requirement.
+    -------------
+          |
+          ---> This three are Amigos.
+
+iii) Agreed upon Requirement defined as English Formatted Scenarios 
+ (Gherkin): GIVEN,WHEN,THEN... 
+ using Examples 
+ Requirements that matters 
+ Ask Questions
+ (why,How,What)
+ Why we are using this feature.
+ How could we achieve those 
+ What are the Framework we are going to use.
+
+iv) QA Team uses Scenarios for manual TCs
+
+v) Developer uses Scenarios for Automates Tests.
+
+vi) Automates Test Report generated against Features/Scenarios
+
+vii) Finish Product.
+
+========================================================================================================================================================================
+Key Differences b/w TDD BDD ATDD:
+=================================
+
+Test Driven Development:
+------------------------
+1.Development centric Approach
+2.UNIT Test (White Box Testing)
+3.Write Test cases before code is written -> Author: Developer
+Test First Approach
+4.Key Focusb --> is my code working correctly?
+
+TDD Cycle:
+==========
+
+  Write the Test Fails        Make the code works      Improve the code
+1.---------------------->   2.------------------->   3.------------------>
+        Test Fails                Test Passed               Refactor
+
+
+Behaviour Driven Development:
+-----------------------------
+1.An Extension of TDD 
+2.Works on higher level of abstraction as compared to TDD
+3.Always ask --> Have we covered all the possible scenario's 
+4.Test First Approach
+5.Authors --> 3 Amigos (Product Owner/Developer/Quality Analyst)
+
+BDD Cycle:
+==========
+
+   write failure feature/Scenario        Make the Test Pass        Improve the code
+1.---------------------------------> 2.-----------------------> 3.------------------->
+               Red Fail                      Pass                      Refactor
+
+
+Acceptance Test Driven Development:
+-----------------------------------
+1.Higher level of Abstraction as compared to BDD/TDD
+2.Focus on High level Requirements
+3.Authors--> PO/BA/Bussiness
+
+
+               |---------------------->User Story 1
+               |                           |
+               |                           |
+               |                           |
+               |                           \/
+               |                 Acceptance Test(PO/QA) 2
+               |                           |
+       Customer Bussiness 7                |
+               |                           | 
+               |                           \/
+             Demo(PO/QA) 6     Write/Expand Test cases(QA) 3
+               |                           |(Fail)
+               |                           |
+           Develop Code 5       |----------|Automation(Dev/QA)
+               |                |          \/
+               |                |   Unit Test to Fail 4
+              BDD 4             |           |
+               |                |           |
+               |<----------------           |
+           Refactor 4                       \/
+               |                         Test Pass 4
+               |                            |
+               ------------------------------                         
+
+
